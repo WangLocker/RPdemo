@@ -1,0 +1,159 @@
+2024-03-06 15:31:39,461 INFO [main] c.t.r.RPdemoApplication [StartupInfoLogger.java:50] Starting RPdemoApplication using Java 17.0.8 with PID 12156 (C:\Users\Dell\Desktop\RP\RPdemo\target\classes started by Dell in C:\Users\Dell\Desktop\RP\RPdemo)
+2024-03-06 15:31:39,462 INFO [main] c.t.r.RPdemoApplication [SpringApplication.java:660] The following 1 profile is active: "dev"
+2024-03-06 15:31:40,060 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:109] Tomcat initialized with port 9958 (http)
+2024-03-06 15:31:40,067 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9958"]
+2024-03-06 15:31:40,068 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-03-06 15:31:40,069 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-06 15:31:40,101 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-03-06 15:31:40,102 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 607 ms
+2024-03-06 15:31:40,350 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9958"]
+2024-03-06 15:31:40,361 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:241] Tomcat started on port 9958 (http) with context path ''
+2024-03-06 15:31:40,366 INFO [main] c.t.r.RPdemoApplication [StartupInfoLogger.java:56] Started RPdemoApplication in 1.127 seconds (process running for 1.655)
+2024-03-06 15:34:26,895 INFO [main] c.t.r.RPdemoApplication [StartupInfoLogger.java:50] Starting RPdemoApplication using Java 17.0.8 with PID 15628 (C:\Users\Dell\Desktop\RP\RPdemo\target\classes started by Dell in C:\Users\Dell\Desktop\RP\RPdemo)
+2024-03-06 15:34:26,896 INFO [main] c.t.r.RPdemoApplication [SpringApplication.java:660] The following 1 profile is active: "dev"
+2024-03-06 15:34:27,480 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:109] Tomcat initialized with port 9958 (http)
+2024-03-06 15:34:27,486 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9958"]
+2024-03-06 15:34:27,487 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-03-06 15:34:27,488 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-06 15:34:27,527 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-03-06 15:34:27,527 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 604 ms
+2024-03-06 15:34:27,788 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9958"]
+2024-03-06 15:34:27,799 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:241] Tomcat started on port 9958 (http) with context path ''
+2024-03-06 15:34:27,805 INFO [main] c.t.r.RPdemoApplication [StartupInfoLogger.java:56] Started RPdemoApplication in 1.139 seconds (process running for 1.667)
+2024-03-06 15:34:45,122 INFO [main] c.t.r.RPdemoApplication [StartupInfoLogger.java:50] Starting RPdemoApplication using Java 17.0.8 with PID 8548 (C:\Users\Dell\Desktop\RP\RPdemo\target\classes started by Dell in C:\Users\Dell\Desktop\RP\RPdemo)
+2024-03-06 15:34:45,124 INFO [main] c.t.r.RPdemoApplication [SpringApplication.java:660] The following 1 profile is active: "dev"
+2024-03-06 15:34:45,707 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:109] Tomcat initialized with port 9958 (http)
+2024-03-06 15:34:45,714 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9958"]
+2024-03-06 15:34:45,715 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-03-06 15:34:45,715 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-06 15:34:45,748 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-03-06 15:34:45,748 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 596 ms
+2024-03-06 15:34:46,013 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9958"]
+2024-03-06 15:34:46,026 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:241] Tomcat started on port 9958 (http) with context path ''
+2024-03-06 15:34:46,032 INFO [main] c.t.r.RPdemoApplication [StartupInfoLogger.java:56] Started RPdemoApplication in 1.125 seconds (process running for 1.653)
+2024-03-06 15:35:17,783 INFO [main] c.t.r.RPdemoApplication [StartupInfoLogger.java:50] Starting RPdemoApplication using Java 17.0.8 with PID 18560 (C:\Users\Dell\Desktop\RP\RPdemo\target\classes started by Dell in C:\Users\Dell\Desktop\RP\RPdemo)
+2024-03-06 15:35:17,785 INFO [main] c.t.r.RPdemoApplication [SpringApplication.java:660] The following 1 profile is active: "dev"
+2024-03-06 15:35:18,377 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:109] Tomcat initialized with port 9958 (http)
+2024-03-06 15:35:18,383 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9958"]
+2024-03-06 15:35:18,384 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-03-06 15:35:18,385 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-06 15:35:18,421 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-03-06 15:35:18,421 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 607 ms
+2024-03-06 15:35:18,672 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9958"]
+2024-03-06 15:35:18,684 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:241] Tomcat started on port 9958 (http) with context path ''
+2024-03-06 15:35:18,691 INFO [main] c.t.r.RPdemoApplication [StartupInfoLogger.java:56] Started RPdemoApplication in 1.125 seconds (process running for 1.674)
+2024-03-06 15:35:24,800 INFO [main] c.t.r.prework [prework.java:19] 根据启动参数执行初始化工作
+2024-03-06 15:35:27,811 INFO [main] c.t.r.prework [prework.java:22] [START]执行数据库初始化
+2024-03-06 15:39:10,323 INFO [main] c.t.r.RPdemoApplication [StartupInfoLogger.java:50] Starting RPdemoApplication using Java 17.0.8 with PID 21272 (C:\Users\Dell\Desktop\RP\RPdemo\target\classes started by Dell in C:\Users\Dell\Desktop\RP\RPdemo)
+2024-03-06 15:39:10,325 INFO [main] c.t.r.RPdemoApplication [SpringApplication.java:660] The following 1 profile is active: "dev"
+2024-03-06 15:39:10,937 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:109] Tomcat initialized with port 9958 (http)
+2024-03-06 15:39:10,943 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9958"]
+2024-03-06 15:39:10,944 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-03-06 15:39:10,945 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-06 15:39:10,978 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-03-06 15:39:10,979 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 624 ms
+2024-03-06 15:39:11,237 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9958"]
+2024-03-06 15:39:11,250 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:241] Tomcat started on port 9958 (http) with context path ''
+2024-03-06 15:39:11,256 INFO [main] c.t.r.RPdemoApplication [StartupInfoLogger.java:56] Started RPdemoApplication in 1.145 seconds (process running for 1.67)
+2024-03-06 15:39:11,258 INFO [main] c.t.r.prework [prework.java:29] 根据启动参数执行初始化工作
+2024-03-06 15:39:36,426 INFO [main] c.t.r.prework [prework.java:32] [START]执行数据库初始化
+2024-03-06 15:39:36,430 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-03-06 15:39:38,578 INFO [main] c.t.r.RPdemoApplication [StartupInfoLogger.java:50] Starting RPdemoApplication using Java 17.0.8 with PID 16432 (C:\Users\Dell\Desktop\RP\RPdemo\target\classes started by Dell in C:\Users\Dell\Desktop\RP\RPdemo)
+2024-03-06 15:39:38,580 INFO [main] c.t.r.RPdemoApplication [SpringApplication.java:660] The following 1 profile is active: "dev"
+2024-03-06 15:39:39,175 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:109] Tomcat initialized with port 9958 (http)
+2024-03-06 15:39:39,182 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9958"]
+2024-03-06 15:39:39,183 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-03-06 15:39:39,183 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-06 15:39:39,216 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-03-06 15:39:39,216 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 609 ms
+2024-03-06 15:39:39,483 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9958"]
+2024-03-06 15:39:39,496 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:241] Tomcat started on port 9958 (http) with context path ''
+2024-03-06 15:39:39,502 INFO [main] c.t.r.RPdemoApplication [StartupInfoLogger.java:56] Started RPdemoApplication in 1.159 seconds (process running for 1.688)
+2024-03-06 15:39:39,504 INFO [main] c.t.r.prework [prework.java:29] 根据启动参数执行初始化工作
+2024-03-06 15:40:09,474 INFO [main] c.t.r.prework [prework.java:32] [START]执行数据库初始化
+2024-03-06 15:40:09,479 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-03-06 15:42:44,400 INFO [main] c.t.r.RPdemoApplication [StartupInfoLogger.java:50] Starting RPdemoApplication using Java 17.0.8 with PID 20648 (C:\Users\Dell\Desktop\RP\RPdemo\target\classes started by Dell in C:\Users\Dell\Desktop\RP\RPdemo)
+2024-03-06 15:42:44,402 INFO [main] c.t.r.RPdemoApplication [SpringApplication.java:660] The following 1 profile is active: "dev"
+2024-03-06 15:42:45,008 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:109] Tomcat initialized with port 9958 (http)
+2024-03-06 15:42:45,014 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9958"]
+2024-03-06 15:42:45,015 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-03-06 15:42:45,016 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-06 15:42:45,054 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-03-06 15:42:45,055 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 624 ms
+2024-03-06 15:42:45,315 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9958"]
+2024-03-06 15:42:45,328 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:241] Tomcat started on port 9958 (http) with context path ''
+2024-03-06 15:42:45,334 INFO [main] c.t.r.RPdemoApplication [StartupInfoLogger.java:56] Started RPdemoApplication in 1.143 seconds (process running for 1.693)
+2024-03-06 15:42:45,336 INFO [main] c.t.r.prework [prework.java:29] 根据启动参数执行初始化工作
+2024-03-06 15:42:54,692 INFO [main] c.t.r.prework [prework.java:32] [START]执行数据库初始化
+2024-03-06 15:43:02,496 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-03-06 15:43:02,968 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@1d4f5506
+2024-03-06 15:43:02,974 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2024-03-06 15:43:07,785 INFO [main] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-06 15:43:07,795 ERROR [main] o.s.b.SpringApplication [SpringApplication.java:851] Application run failed
+org.springframework.jdbc.datasource.init.CannotReadScriptException: Cannot read SQL script from class path resource [res/cache/db/scripts/initDb.sql]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:239)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at com.transitnet.rpdemo.prework.run(prework.java:35)
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790)
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83)
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789)
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:341)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.transitnet.rpdemo.RPdemoApplication.main(RPdemoApplication.java:10)
+Caused by: java.io.FileNotFoundException: class path resource [res/cache/db/scripts/initDb.sql] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215)
+	at org.springframework.core.io.support.EncodedResource.getReader(EncodedResource.java:147)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.readScript(ScriptUtils.java:328)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:236)
+	... 22 common frames omitted
+2024-03-06 15:43:07,810 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2024-03-06 15:43:07,818 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2024-03-06 15:46:53,213 INFO [main] c.t.r.RPdemoApplication [StartupInfoLogger.java:50] Starting RPdemoApplication using Java 17.0.8 with PID 16212 (C:\Users\Dell\Desktop\RP\RPdemo\target\classes started by Dell in C:\Users\Dell\Desktop\RP\RPdemo)
+2024-03-06 15:46:53,215 INFO [main] c.t.r.RPdemoApplication [SpringApplication.java:660] The following 1 profile is active: "dev"
+2024-03-06 15:46:53,826 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:109] Tomcat initialized with port 9958 (http)
+2024-03-06 15:46:53,833 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9958"]
+2024-03-06 15:46:53,834 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-03-06 15:46:53,834 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-06 15:46:53,874 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-03-06 15:46:53,874 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 628 ms
+2024-03-06 15:46:54,135 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9958"]
+2024-03-06 15:46:54,147 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:241] Tomcat started on port 9958 (http) with context path ''
+2024-03-06 15:46:54,153 INFO [main] c.t.r.RPdemoApplication [StartupInfoLogger.java:56] Started RPdemoApplication in 1.169 seconds (process running for 1.779)
+2024-03-06 15:46:54,155 INFO [main] c.t.r.prework [prework.java:29] 根据启动参数执行初始化工作
+2024-03-06 15:46:56,759 INFO [main] c.t.r.prework [prework.java:32] [START]执行数据库初始化
+2024-03-06 15:46:59,216 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-03-06 15:46:59,693 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@18a096b5
+2024-03-06 15:46:59,698 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2024-03-06 15:47:48,588 INFO [main] c.t.r.RPdemoApplication [StartupInfoLogger.java:50] Starting RPdemoApplication using Java 17.0.8 with PID 17056 (C:\Users\Dell\Desktop\RP\RPdemo\target\classes started by Dell in C:\Users\Dell\Desktop\RP\RPdemo)
+2024-03-06 15:47:48,590 INFO [main] c.t.r.RPdemoApplication [SpringApplication.java:660] The following 1 profile is active: "dev"
+2024-03-06 15:47:49,197 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:109] Tomcat initialized with port 9958 (http)
+2024-03-06 15:47:49,204 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-9958"]
+2024-03-06 15:47:49,205 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-03-06 15:47:49,206 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-06 15:47:49,244 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-03-06 15:47:49,244 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 625 ms
+2024-03-06 15:47:49,526 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-9958"]
+2024-03-06 15:47:49,537 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:241] Tomcat started on port 9958 (http) with context path ''
+2024-03-06 15:47:49,543 INFO [main] c.t.r.RPdemoApplication [StartupInfoLogger.java:56] Started RPdemoApplication in 1.171 seconds (process running for 1.707)
+2024-03-06 15:47:49,545 INFO [main] c.t.r.prework [prework.java:29] 根据启动参数执行初始化工作
+2024-03-06 15:47:52,558 INFO [main] c.t.r.prework [prework.java:32] [START]执行数据库初始化
+2024-03-06 15:47:52,562 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-03-06 15:47:52,635 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@1d4f5506
+2024-03-06 15:47:52,637 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2024-03-06 15:47:52,641 INFO [main] c.t.r.prework [prework.java:36] [START]数据库初始化完成

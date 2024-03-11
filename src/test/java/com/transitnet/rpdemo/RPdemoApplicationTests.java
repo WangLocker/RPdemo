@@ -1,0 +1,13 @@
+package com.transitnet.rpdemo;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class RPdemoApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
