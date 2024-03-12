@@ -1,6 +1,5 @@
 package com.transitnet.rpdemo.model;
 
-import de.unifreiburg.informatik.cobweb.routing.server.model.RouteElement;
 
 /**
  * Types of transportation modes.<br>

@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 @Service
-public final class osmDatabaseHandler implements OsmHandler {
+public final class osmDatabaseHandler implements IOsmFileHandler {
 
     @Autowired
     com.transitnet.rpdemo.service.parse.osm.databaseOprator databaseOprator;

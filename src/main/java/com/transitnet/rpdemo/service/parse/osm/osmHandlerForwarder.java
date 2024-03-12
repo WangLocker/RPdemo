@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 
-@Service
 public final class osmHandlerForwarder implements OsmHandler {
     /**
      * 下面这个迭代器是用来存储所有作为转发目标的OsmHandler的

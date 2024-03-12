@@ -1,7 +1,9 @@
 package com.transitnet.rpdemo;
 
+import com.transitnet.rpdemo.service.parse.parseService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.io.ClassPathResource;
@@ -24,6 +26,9 @@ public class prework implements CommandLineRunner {
         this.dataSource = dataSource;
     }
 
+    @Autowired
+    parseService parseService;
+
     @Override
     public void run(String... args) throws Exception {
         logger.info("根据启动参数执行初始化工作");
@@ -34,6 +39,8 @@ public class prework implements CommandLineRunner {
             populator.addScript(new ClassPathResource("scripts/initDb.sql"));
             populator.populate(dataSource.getConnection());
             logger.info("[START]数据库初始化完成");
+            logger.info("[START]开始解析OSM数据");
+            parseService.parseData();
 
         } else if(setupMode.equals("clean")) {
             logger.info("[CLEAN]清理应用数据库与缓存");

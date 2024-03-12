@@ -1,5 +1,6 @@
 package com.transitnet.rpdemo.util;
 
+import com.transitnet.rpdemo.model.IHasId;
 import org.eclipse.collections.api.block.procedure.primitive.IntObjectProcedure;
 import org.eclipse.collections.api.list.MutableList;
 import org.eclipse.collections.api.ordered.OrderedIterable;

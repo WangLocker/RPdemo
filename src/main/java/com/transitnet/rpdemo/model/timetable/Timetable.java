@@ -2,6 +2,7 @@ package com.transitnet.rpdemo.model.timetable;
 
 import com.transitnet.rpdemo.model.Footpath;
 import com.transitnet.rpdemo.model.UniqueIdGenerator;
+import com.transitnet.rpdemo.util.RoutingUtil;
 import org.eclipse.collections.api.map.primitive.MutableIntObjectMap;
 import org.eclipse.collections.api.set.primitive.MutableIntSet;
 import org.eclipse.collections.impl.factory.primitive.IntObjectMaps;

@@ -1,13 +1,8 @@
 package com.transitnet.rpdemo.service.parse.osm;
 
 import com.transitnet.rpdemo.dao.*;
-import com.transitnet.rpdemo.entity.osmNodeEntity;
-import com.transitnet.rpdemo.entity.osmNodeTagEntity;
-import com.transitnet.rpdemo.entity.osmWayTagEntity;
 import com.transitnet.rpdemo.pojo.IdMapping;
 import com.transitnet.rpdemo.pojo.SpatialNodeData;
-import com.transitnet.rpdemo.util.DatabaseUtil;
-import de.topobyte.osm4j.core.model.iface.EntityType;
 import de.topobyte.osm4j.core.model.iface.OsmEntity;
 import de.topobyte.osm4j.core.model.iface.OsmNode;
 import de.topobyte.osm4j.core.model.iface.OsmWay;
@@ -17,14 +12,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
@@ -45,11 +37,20 @@ public class databaseOprator {
 
     public void offerOsmEntities(final Stream<OsmEntity> entities, final int size) {
         LOGGER.info("Offering {} entities to the database", size);
+        AtomicInteger i= new AtomicInteger();
         entities.forEach(entity -> {
             if (entity instanceof OsmNode) {
                 queueOsmNode((OsmNode)entity);
+                i.addAndGet(1);
+                if(i.get()%1000==0){
+                    LOGGER.info("本次缓存处理到了第{}个节点",i);
+                }
             } else if (entity instanceof OsmWay) {
                 queueOsmWay((OsmWay)entity);
+                i.addAndGet(1);
+                if(i.get()%1000==0){
+                    LOGGER.info("本次缓存处理到了第{}个节点",i);
+                }
             }
         });
     }

@@ -1,8 +1,9 @@
 package com.transitnet.rpdemo.model.road;
 
-import de.unifreiburg.informatik.cobweb.routing.model.graph.*;
-import de.unifreiburg.informatik.cobweb.util.collections.HybridArrayHashSet;
-import de.unifreiburg.informatik.cobweb.util.collections.IdMap;
+
+import com.transitnet.rpdemo.model.*;
+import com.transitnet.rpdemo.util.HybridArrayHashSet;
+import com.transitnet.rpdemo.util.IdMap;
 import org.eclipse.collections.api.map.primitive.MutableIntObjectMap;
 import org.eclipse.collections.impl.factory.primitive.IntObjectMaps;
 

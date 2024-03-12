@@ -2,6 +2,7 @@ package com.transitnet.rpdemo.model.road;
 
 import com.transitnet.rpdemo.model.*;
 import com.transitnet.rpdemo.service.parse.osm.EHighwayType;
+import com.transitnet.rpdemo.util.RoutingUtil;
 
 import java.util.Collections;
 import java.util.EnumMap;

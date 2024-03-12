@@ -1,8 +1,12 @@
 package com.transitnet.rpdemo.entity;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+@Entity
+@Table(name = "osm_way_tags")
 public class osmWayTagEntity {
     @Id
     @Column(name = "id")
