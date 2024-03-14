@@ -2,6 +2,7 @@ package com.transitnet.rpdemo.model.timetable;
 
 import com.transitnet.rpdemo.model.Footpath;
 import com.transitnet.rpdemo.model.UniqueIdGenerator;
+import com.transitnet.rpdemo.util.RangedOverflowListIterator;
 import com.transitnet.rpdemo.util.RoutingUtil;
 import org.eclipse.collections.api.map.primitive.MutableIntObjectMap;
 import org.eclipse.collections.api.set.primitive.MutableIntSet;
@@ -248,19 +249,19 @@ public final class Timetable implements ITimetableIdGenerator, Serializable {
      * @return An iterator over all connections, starting with the first
      *         connection departing not before the given time
      */
-//    public Iterator<Connection> getConnectionsStartingSince(final int time) {
-//        final Connection searchNeedle = new Connection(-1, -1, -1, -1, time, time);
-//        final int indexOfNext = -1 * Collections.binarySearch(mConnections, searchNeedle) - 1;
-//
-//        // If all connections are before the given time
-//        if (indexOfNext == mConnections.size()) {
-//            // Use a regular iterator starting from the first element
-//            return mConnections.iterator();
-//        }
-//
-//        // Use a ranged overflow iterator based on random access
-//        return new RangedOverflowListIterator<>(mConnections, indexOfNext);
-//    }
+    public Iterator<Connection> getConnectionsStartingSince(final int time) {
+        final Connection searchNeedle = new Connection(-1, -1, -1, -1, time, time);
+        final int indexOfNext = -1 * Collections.binarySearch(mConnections, searchNeedle) - 1;
+
+        // If all connections are before the given time
+        if (indexOfNext == mConnections.size()) {
+            // Use a regular iterator starting from the first element
+            return mConnections.iterator();
+        }
+
+        // Use a ranged overflow iterator based on random access
+        return new RangedOverflowListIterator<>(mConnections, indexOfNext);
+    }
 
     /**
      * Gets the greatest ID currently in use for a stop in this table.

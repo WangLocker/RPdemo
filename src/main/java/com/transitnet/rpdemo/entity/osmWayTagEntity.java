@@ -19,7 +19,7 @@ public class osmWayTagEntity {
     private String highway;
 
     @Column(name = "maxspeed")
-    private int maxspeed;
+    private Integer maxspeed;
 
 
     public void setId(Long id) {
@@ -47,11 +47,11 @@ public class osmWayTagEntity {
         this.highway = highway;
     }
 
-    public int getMaxspeed() {
+    public Integer getMaxspeed() {
         return maxspeed;
     }
 
-    public void setMaxspeed(int maxspeed) {
+    public void setMaxspeed(Integer maxspeed) {
         this.maxspeed = maxspeed;
     }
 }

@@ -1,6 +1,9 @@
 package com.transitnet.rpdemo.service.parse.osm;
 
 import com.transitnet.rpdemo.dao.*;
+import com.transitnet.rpdemo.entity.osmNodeEntity;
+import com.transitnet.rpdemo.entity.osmNodeTagEntity;
+import com.transitnet.rpdemo.entity.osmWayTagEntity;
 import com.transitnet.rpdemo.pojo.IdMapping;
 import com.transitnet.rpdemo.pojo.SpatialNodeData;
 import de.topobyte.osm4j.core.model.iface.OsmEntity;
@@ -38,21 +41,22 @@ public class databaseOprator {
     public void offerOsmEntities(final Stream<OsmEntity> entities, final int size) {
         LOGGER.info("Offering {} entities to the database", size);
         AtomicInteger i= new AtomicInteger();
+        List<osmNodeEntity> l1=new ArrayList<>();
+        List<osmNodeTagEntity> l2=new ArrayList<>();
+        List<osmWayTagEntity> l3=new ArrayList<>();
         entities.forEach(entity -> {
             if (entity instanceof OsmNode) {
-                queueOsmNode((OsmNode)entity);
-                i.addAndGet(1);
-                if(i.get()%1000==0){
-                    LOGGER.info("本次缓存处理到了第{}个节点",i);
-                }
+                List<Object> temp=buildOsmNode((OsmNode)entity);
+                l1.add((osmNodeEntity)temp.get(0));
+                l2.add((osmNodeTagEntity)temp.get(1));
             } else if (entity instanceof OsmWay) {
-                queueOsmWay((OsmWay)entity);
-                i.addAndGet(1);
-                if(i.get()%1000==0){
-                    LOGGER.info("本次缓存处理到了第{}个节点",i);
-                }
+                buildOsmWay((OsmWay)entity);
+                l3.add(buildOsmWay((OsmWay)entity));
             }
         });
+        osmNodeDao.saveAll(l1);
+        osmNodeTagDao.saveAll(l2);
+        osmWayTagDao.saveAll(l3);
     }
 
     public void offerIdMappings(final Stream<IdMapping> mappings, final int size) {
@@ -66,7 +70,7 @@ public class databaseOprator {
         });
     }
 
-    private void queueOsmNode(final OsmNode node){
+    private List<Object> buildOsmNode(final OsmNode node){
         // Retrieve information
         final long id = node.getId();
         final float latitude = (float) node.getLatitude();
@@ -76,12 +80,19 @@ public class databaseOprator {
         final String highway = tagToValue.get(OsmParseUtil.HIGHWAY_TAG);
 
         // Insert node data
-        osmNodeDao.insertNode(id, latitude, longitude);
+        osmNodeEntity object1 = new osmNodeEntity();
+        object1.setId(id);
+        object1.setLatitude(latitude);
+        object1.setLongitude(longitude);
         // Insert tag data
-        osmNodeTagDao.insertNodeTag(id, name, highway);
+        osmNodeTagEntity object2 = new osmNodeTagEntity();
+        object2.setId(id);
+        object2.setName(name);
+        object2.setHighway(highway);
+        return Arrays.asList(object1, object2);
     }
 
-    private void queueOsmWay(final OsmWay way){
+    private osmWayTagEntity buildOsmWay(final OsmWay way){
         final long wayId = way.getId();
         final Map<String, String> tagToValue = OsmModelUtil.getTagsAsMap(way);
         final String name = tagToValue.get(OsmParseUtil.NAME_TAG);
@@ -92,28 +103,22 @@ public class databaseOprator {
         }
 
         // Insert tag data
-        osmWayTagDao.insertWayTag(wayId, name, highway, maxSpeed);
+        osmWayTagEntity object = new osmWayTagEntity();
+        object.setId(wayId);
+        object.setName(name);
+        object.setHighway(highway);
+        object.setMaxspeed(maxSpeed);
+        return object;
     }
 
     public Collection<SpatialNodeData> getSpatialNodeData(final LongStream nodeIds, final int size){
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("Getting spatial data for {} nodes", size);
         }
-        final List<SpatialNodeData> nodeData = new ArrayList<>(size);
+        List<SpatialNodeData> nodeData;
         List<Long> nodeList = nodeIds.boxed().collect(Collectors.toList());
-        ResultSet result=osmNodeDao.getSpatialNodes(nodeList);
+        nodeData=osmNodeDao.getSpatialNodes(nodeList);
 
-        try {
-            while (result.next()) {
-                final long osmId = result.getLong(1);
-                final int internalId = result.getInt(2);
-                final float latitude = result.getFloat(3);
-                final float longitude = result.getFloat(4);
-                nodeData.add(new SpatialNodeData(internalId, osmId, latitude, longitude));
-            }
-        } catch (SQLException e) {
-            LOGGER.error("Error while fetching spatial node data", e);
-        }
         return nodeData;
     }
 }

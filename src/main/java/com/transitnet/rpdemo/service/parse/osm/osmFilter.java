@@ -4,9 +4,11 @@ import de.topobyte.osm4j.core.model.iface.OsmNode;
 import de.topobyte.osm4j.core.model.iface.OsmRelation;
 import de.topobyte.osm4j.core.model.iface.OsmTag;
 import de.topobyte.osm4j.core.model.iface.OsmWay;
+import jakarta.annotation.PostConstruct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -16,8 +18,8 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-
-public final class osmFilter implements IOsmFilter {
+@Service
+public  class osmFilter implements IOsmFilter {
 
     private static final String COMMENT_PREFIX = "#";
 
@@ -38,7 +40,7 @@ public final class osmFilter implements IOsmFilter {
     }
 
     @Value("${rpdemo.osmfilter.cfg}")
-    private Path filterConfig;
+    private String filterConfig;
 
 
     private final Map<String, Set<String>> mTagToValuesDrop;
@@ -49,7 +51,6 @@ public final class osmFilter implements IOsmFilter {
     public osmFilter()  {
         mTagToValuesKeep = new HashMap<>();
         mTagToValuesDrop = new HashMap<>();
-        initialize();
     }
 
     @Override
@@ -84,11 +85,12 @@ public final class osmFilter implements IOsmFilter {
         return hasOneKeepTag;
     }
 
+    @PostConstruct
     private void initialize() {
         if (LOGGER.isDebugEnabled()) {
             LOGGER.debug("Initializing OSM road filter");
         }
-        final Path filter = filterConfig;
+        final Path filter = Path.of(filterConfig);
         try (BufferedReader br = Files.newBufferedReader(filter)) {
             boolean keepMode = true;
             while (true) {

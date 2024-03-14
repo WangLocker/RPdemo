@@ -15,4 +15,5 @@ public class parseService {
     public void parseData() throws IOException, OsmInputException {
         osmparseService.parseData();
     }
+
 }

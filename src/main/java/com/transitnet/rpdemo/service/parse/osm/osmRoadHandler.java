@@ -11,6 +11,7 @@ import de.topobyte.osm4j.core.model.impl.Node;
 import de.topobyte.osm4j.core.model.util.OsmModelUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -44,22 +45,6 @@ public final class osmRoadHandler<N extends INode & IHasId & ISpatial, E extends
      */
     private IdMapping[] mBufferedWayMappings;
     /**
-     * 用于构建将要插入图中的边和节点的构建器。
-     */
-    private IosmRoadBuilder<N,E> mBuilder;
-    /**
-     * 用于请求空间节点数据的数据库。
-     */
-    private databaseOprator mDatabase;
-    /**
-     * 用于过滤道路的OSM过滤器。
-     */
-    private osmFilter mFilter;
-    /**
-     * 用于插入解析的节点和边的图。
-     */
-    private G mGraph;
-    /**
      * 当前索引，指向下一个元素可以插入的索引。因此，它总是比最后插入的元素的索引大一。因此，它表示缓冲区的当前占用大小。
      */
     private int mNodeMappingBufferIndex;
@@ -71,6 +56,26 @@ public final class osmRoadHandler<N extends INode & IHasId & ISpatial, E extends
      * 当前索引，指向下一个元素可以插入的索引。因此，它总是比最后插入的元素的索引大一。因此，它表示缓冲区的当前占用大小。
      */
     private int mWayMappingBufferIndex;
+    /**
+     * 用于过滤道路的OSM过滤器。
+     */
+    @Autowired
+    private osmFilter mFilter;
+    /**
+     * 用于请求空间节点数据的数据库。
+     */
+    @Autowired
+    private databaseOprator mDatabase;
+    /**
+     * 用于构建将要插入图中的边和节点的构建器。
+     */
+    private IosmRoadBuilder<N,E> mBuilder;
+
+    /**
+     * 用于插入解析的节点和边的图。
+     */
+    private G mGraph;
+
 
     /**
      * Creates a new OSM road handler which operates on the given graph using the
@@ -81,10 +86,15 @@ public final class osmRoadHandler<N extends INode & IHasId & ISpatial, E extends
      * database offers spatial node data for nodes.
      *
      */
-    public osmRoadHandler(){
+    public osmRoadHandler() {
         mBufferedNodeMappings = new IdMapping[BUFFER_SIZE];
         mBufferedWayMappings = new IdMapping[BUFFER_SIZE];
         mBufferedSpatialRequests = new long[BUFFER_SIZE];
+    }
+
+    public void setBuilderAndGraph(IosmRoadBuilder<N,E> builder, G graph){
+        mBuilder = builder;
+        mGraph = graph;
     }
 
     /*
